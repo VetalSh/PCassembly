@@ -125,10 +125,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 10.2rem;
   height: 11.2rem;
   background-color: #121212;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; */
 }
 .timer__item:not(:last-child) {
   margin-right: 3rem;
@@ -244,12 +240,6 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   margin: 0 11rem;
 }
-.command__item {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
-}
 .command__img {
   width: 19rem;
   height: 19rem;
@@ -275,12 +265,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .assembly {
   padding-bottom: 24.4rem;
-}
-.assembly__wrap {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
 }
 .assembly__header {
   margin-bottom: 3rem;
@@ -319,4 +303,69 @@ h1, h2, h3, h4, h5, h6 {
 }
 .assembly__item:not(:last-child) {
   margin-right: 3rem;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 10;
+  padding: 3rem 0;
+  background: rgba(0,0,0,.8);
+  display: none;
+}
+.modal__inner {
+  position: relative;
+  width: 66.3rem;
+  padding: 9rem 1rem;
+  background: #2c2c2c;
+  text-align: center;
+}
+.modal__header {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 140%;
+  margin-bottom: 1rem;
+}
+.modal__subheader {
+  margin-bottom: 2.8rem;
+  font-size: 1.6rem;
+  line-height: 160%;
+  opacity: 0.5;
+}
+.modal__elements {
+  width: 45.5rem;
+  margin: 0 auto 3.2rem auto;
+}
+.modal__item {
+  height: 4.4rem;
+}
+.modal__input {
+  width: 100%;
+  height: 100%;
+  padding: 0rem 2rem;
+  background: grey;
+  border-radius: 5rem;
+  font-style: 1.4rem;
+  line-height: 160%;
+  color: #fff;
+  opacity: 0.8;
+}
+.modal__item:not(:last-child) {
+  margin-bottom: 1.8rem;
+}
+.modal__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+.noscroll {
+  overflow: hidden;
+  height: 100%;
 }
