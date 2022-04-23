@@ -12,6 +12,7 @@ body {
     background-image: linear-gradient(to right top, #060606, #050504, #030303, #020201, #000000);
     color: #FFFFFF;
 }
+/* html { scroll-behavior: smooth; } */
 
 img {
     width: 100%;
